@@ -1,1 +1,2 @@
-#My-Portfolio
+# My-Portfolio
+This is my personal portfolio website with all the information about my projects, contacts, resume, education and many more. Each projects have details about the team, tech-stack, etc. Anyone can connect with my via socials and also have the email option.
