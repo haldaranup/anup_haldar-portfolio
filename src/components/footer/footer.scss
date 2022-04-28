@@ -1,0 +1,19 @@
+@import "../../global.scss";
+#footer{
+    height: 10vh;
+    background-color: $mainColor;
+    display: flex;
+
+    p{
+        color: white;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+        span{
+            margin: 4px;
+        }
+    }
+}

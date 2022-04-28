@@ -1,0 +1,65 @@
+.intro {
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro .left {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.intro .right {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  position: relative;
+}
+
+.intro .right .typing {
+  width: 100%;
+  height: 100vh;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .right .typing h1 {
+  font-size: 40px;
+}
+
+.intro .right a {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+
+.intro .right a .downArrow {
+  color: #15023a;
+  font-size: 5rem;
+  -webkit-animation: arrowBlink 2s infinite;
+          animation: arrowBlink 2s infinite;
+}
+
+@-webkit-keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=intro.css.map */

@@ -1,0 +1,80 @@
+@import "../../global.scss";
+
+.intro{
+    background-color: #ff8c00;
+    display: flex;
+
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+
+        .imgContainer{
+            width: 850px;                       
+    height: 850px;
+            background-color: rgb(255, 0, 119);
+            border-radius: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            float: right;
+        }
+    }
+    .right{
+        flex: 0.5;
+        position: relative;
+        .typing{
+            width: 100%;
+            height: calc(100vh - 70px);
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 75px;
+            h1{
+                font-size: 4.5rem;
+
+                
+            }
+            h2{
+                font-size: 2rem;
+            }
+            h3{
+                font-size: 2rem;
+
+                span{
+                    color: yellow
+                }
+
+                .ityped-cursor{
+                    animation: blink 1s infinite;
+                }
+    
+                @keyframes blink {
+                    50%{
+                        opacity: 1;
+                    }
+                    100%{
+                        opacity: 0;
+                    }
+                }
+
+            }
+
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+            .downArrow{
+                color: $mainColor;
+                font-size: 5rem;
+                animation: arrowBlink 2s infinite;
+            }
+            @keyframes arrowBlink {
+                100%{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
