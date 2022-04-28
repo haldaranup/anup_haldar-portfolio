@@ -3,6 +3,7 @@
 .navbar {
   width: 100%;
   height: 70px;
+  overflow: hidden;
   background-color: $mainColor;
   color: rgb(247, 247, 20);
   scrollbar-width: none;
@@ -28,7 +29,7 @@
         font-size: 2.4rem;
         font-weight: 700;
         text-decoration: none;
-        color: inherit;
+        color: yellow;
       }
     }
 
@@ -48,9 +49,7 @@
           a {
             text-decoration: none;
             color: yellow;
-            &:hover {
-              font-size: 1.25rem;
-            }
+            
           }
         }
       }

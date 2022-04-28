@@ -1,7 +1,7 @@
 .menu {
   width: 300px;
   height: 100vh;
-  background-color: #15023a;
+  background-color: #001220;
   position: fixed;
   top: 0;
   right: -300px;
@@ -35,6 +35,19 @@
   margin: 0;
   padding: 0;
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu ul li {
@@ -42,9 +55,10 @@
 }
 
 .menu ul li a {
-  color: inherit;
+  color: white;
   font-size: inherit;
   text-decoration: none;
+  letter-spacing: 4px;
 }
 
 .menu ul li:hover {

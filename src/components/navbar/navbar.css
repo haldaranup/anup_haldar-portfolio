@@ -1,7 +1,8 @@
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: #15023a;
+  overflow: hidden;
+  background-color: #001220;
   color: #f7f714;
   scrollbar-width: none;
   -webkit-transition: all 1s ease;
@@ -34,22 +35,30 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 15%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar .wrapper .left .logo {
+  font-family: 'Satisfy';
   font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
-  color: inherit;
-  margin-right: 40px;
+  color: yellow;
 }
 
 .navbar .wrapper .links {
-  margin-left: 25%;
-  width: 40%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navbar .wrapper .links ul {
+  margin-left: 45%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,10 +68,9 @@
 }
 
 .navbar .wrapper .links ul li {
-  font-family: "Satisfy", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
-  width: 60%;
 }
 
 .navbar .wrapper .links ul li a {
@@ -70,12 +78,8 @@
   color: yellow;
 }
 
-.navbar .wrapper .links ul li a:hover {
-  font-size: 1.25rem;
-}
-
 .navbar .wrapper .right .hamburger {
-  width: 36px;
+  width: 50px;
   height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;

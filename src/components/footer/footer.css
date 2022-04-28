@@ -1,0 +1,28 @@
+#footer {
+  height: 10vh;
+  background-color: #001220;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer p {
+  color: white;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+#footer p span {
+  margin: 4px;
+}
+/*# sourceMappingURL=footer.css.map */

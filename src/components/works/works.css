@@ -1,4 +1,67 @@
 .works {
-  background-color: white;
+  background-color: #00ffd0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.works .slider {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+
+.works .slider .container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works .slider .container .item {
+  width: 700px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.works .slider .container .item .left {
+  height: 100%;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  background-color: #571212;
+}
+
+.works .slider .container .item .right {
+  height: 100%;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  background-color: #4a2cc0;
 }
 /*# sourceMappingURL=works.css.map */

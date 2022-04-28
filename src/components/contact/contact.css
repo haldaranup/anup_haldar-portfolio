@@ -1,4 +1,169 @@
 .contact {
-  background-color: red;
+  background-color: darkorange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .left img {
+  width: 70%;
+}
+
+.contact .right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .right .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .right .email h2 {
+  font-size: 3rem;
+}
+
+.contact .right .email form {
+  width: 100%;
+  height: 60%;
+  max-height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .right .email form input {
+  width: 300px;
+  height: 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-weight: 500;
+  color: gray;
+}
+
+.contact .right .email form input:focus {
+  outline: none;
+}
+
+.contact .right .email form textarea {
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 120px;
+  max-height: 200px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  font-weight: 500;
+  color: gray;
+}
+
+.contact .right .email form textarea:focus {
+  outline: none;
+}
+
+.contact .right .email form #btn {
+  width: 140px;
+  height: 35px;
+  color: yellow;
+  background-color: #030333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact .right .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .right .social h2 {
+  font-size: 3rem;
+}
+
+.contact .right .social .socialIcon {
+  width: 100%;
+  height: 60%;
+  max-height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .right .social .socialIcon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: yellow;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.contact .right .social .socialIcon a .icons {
+  margin-right: 10px;
+  color: #001220;
 }
 /*# sourceMappingURL=contact.css.map */

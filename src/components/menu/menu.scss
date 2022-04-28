@@ -26,14 +26,19 @@
         margin: 0;
         padding: 0;
         width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         
 
         li{
             margin-bottom: 30px;
             a{
-                color: inherit;
+                color: white;
                 font-size: inherit;
                 text-decoration: none;
+                letter-spacing: 4px;
                 
             }
 
