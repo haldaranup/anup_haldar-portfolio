@@ -1,26 +1,25 @@
-import "./menu.scss"
+import "./menu.scss";
 
-export default function Menu({toggleMenu, setToggleMenu}) {
-    function closeMenu(){
-        setToggleMenu(false)
-    }
+export default function Menu({ menuOpen, setMenuOpen }) {
   return (
-    <div className={"menu "+ (toggleMenu && "active")}>
-        <ul>
-            <li onClick={closeMenu}>
-                <a href="#intro">About</a>
-            </li>
-            <li onClick={closeMenu}>
-                <a href="#portfolio">Resume</a>
-            </li>
-            <li onClick={closeMenu}>
-                <a href="#works">Projects</a>
-            </li>
-            <li onClick={closeMenu}>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-
+    <div className={"menu "+(menuOpen && "active")}>
+      <ul>
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#intro">Home</a>
+        </li>
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#works">Works</a>
+        </li>
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#testimonials">Testimonials</a>
+        </li>
+        <li onClick={()=>setMenuOpen(false)}>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-  )
+  );
 }

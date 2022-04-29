@@ -1,22 +1,27 @@
-import "./navbar.scss";
+import { Phone } from "@mui/icons-material";
+import "./topbar.scss";
 
-export default function Navbar({ toggleMenu, setToggleMenu }) {
+export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className={"navbar " + (toggleMenu && "active")}>
+    <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
             Anup
           </a>
+          <div className="itemContainer">
+            <Phone className="icon" />
+            <span>+91 7351972087</span>
+          </div>
+          
         </div>
-
         <div className="links">
             <ul>
                 <li>
                     <a href="#intro">About</a>
                 </li>
                 <li>
-                    <a href="#portfolio">Resume</a>
+                    <a href="#skills">Skills</a>
                 </li>
                 <li>
                     <a href="#works">Projects</a>
@@ -27,8 +32,9 @@ export default function Navbar({ toggleMenu, setToggleMenu }) {
             </ul>
         </div>
 
+
         <div className="right">
-          <div className="hamburger" onClick={() => setToggleMenu(!toggleMenu)}>
+          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>

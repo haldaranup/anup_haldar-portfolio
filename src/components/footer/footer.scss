@@ -1,19 +1,77 @@
 @import "../../global.scss";
 #footer{
-    height: 10vh;
-    background-color: $mainColor;
+    height: 25vh;
+    background-color: $sectionColor;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    .copy{
+        p{
+            color: white;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            word-spacing: 1.5px;
+            letter-spacing: 2px;
+            // border: 1px solid red;
+            span{
+                margin: 4px;
+            }
+        }
 
-    p{
-        color: white;
-        margin: auto;
+    }
+    .line{
+    height: 2px;
+        background-color: #fff;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .socials{
         display: flex;
         justify-content: center;
-        align-items: baseline;
-        word-spacing: 1.5px;
-        letter-spacing: 2px;
-        span{
-            margin: 4px;
+        div{
+            // border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+            .icons{
+                // border: 1px solid white;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: auto;
+            }
+            .contacts{
+                color: yellow;
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+                
+                width: 100%;
+                margin: auto;
+                div{
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    .socialIcon{
+                        height: 25px;
+                        width: 25px;
+                    }
+
+                }
+            }
+            a{
+                color: yellow;
+                .socialIcon{
+                    height: 25px;
+                    width: 25px;
+                }
+                
+            }
         }
     }
+
 }

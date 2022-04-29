@@ -1,34 +1,30 @@
-import React from "react";
-import { useState } from "react";
-import Contact from "./components/contact/Contact";
+import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
-import Navbar from "./components/navbar/Navbar";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
-import Menu from "./components/menu/Menu";
-import About from "./components/about/About";
-import Top from "./components/top/Top";
+import Resume from "./components/resume/Resume";
+import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-
-
+import Top from "./components/top/Top";
 import "./app.scss";
-
-
+import { useState } from "react";
+import Menu from "./components/menu/Menu";
 
 function App() {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
-      <Navbar toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
-      <Menu toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
-        <Intro />
         <Top />
-        <About />
+        <Intro />
         <Portfolio />
         <Works />
+        <Resume />
         <Contact />
         <Footer />
+
       </div>
     </div>
   );

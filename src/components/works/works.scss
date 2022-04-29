@@ -1,43 +1,117 @@
+@import "../../global.scss";
+
 .works {
-    background-color: rgb(0, 255, 208);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: $mainColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
+  .arrow {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
 
-    .slider{
-        height: 350px;
-        display: flex;
-        position: absolute;
-        left: 0;
+    
 
-        .container{
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .item{
-                width: 700px;
-                height: 100%;
-                background-color: #fff;
-                border-radius: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-
-                .left{
-                    height: 100%;
-                    flex: 6;
-                    background-color: rgb(87, 18, 18);
-                }
-                .right{
-                    height: 100%;
-                    flex: 6;
-                    background-color: rgb(74, 44, 192);
-                }
-            }
-        }
+    &.left {
+      left: 100px;
+      transform: rotateY(180deg);
     }
+
+    &.right {
+      right: 100px;
+    }
+  }
+
+  .slider {
+    height: 90vh;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+
+    
+
+    .container {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      // border: 1px solid white;
+      h1, p{
+        color: white;
+      }
+      div{
+        height: 25%;
+        width: 60%;
+        display: flex;
+        // border: 1px solid white;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        color: yellow;
+        
+      }
+      .links{
+        display: flex;
+        justify-content: space-evenly;
+        a{
+          .github{
+            color: yellow;
+            width: 30px;
+            height: 30px;
+
+        }
+
+        }
+        a{
+          button{
+            border: none;
+            width: 100px;
+            height: 30px;
+            border-radius: 6px;
+            background-color: crimson;
+            cursor: pointer;
+            color: white;
+            font-size: 1.15rem;
+          }
+
+        }
+      }
+      
+      .item {
+        width: 650px;
+        height: 50%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+          width: 80%;
+          height: 150px;
+          margin: 15px 0;
+        }
+
+        
+        .right {
+          flex: 8;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          img {
+            width: 400px;
+            transform: rotate(-10deg);
+          }
+        }
+      }
+    }
+  }
 }

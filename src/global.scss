@@ -1,6 +1,17 @@
 
+
+$width: 768px;
+
+
+$activeColor: #3e023d;
 $mainColor: #001220;
 $slideColor: #034078;
 $mainFont: 'Poppins', sans-serif;
 $cursiveFont: 'Satisfy', cursive;
-$sectionColor: #310642;
+$sectionColor: #0a0b3a;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

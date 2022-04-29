@@ -1,66 +1,78 @@
 
 import "./contact.scss";
-import { GitHub, LinkedIn, Email, Phone } from "@mui/icons-material";
+
+
+
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function Contact() {
-  const handleSubmit = (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_vm5f8qb",
+        "template_4qli9oo",
+        form.current,
+        "zzGaGl6ZOZA8uZGhz"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
+
   return (
     <div className="contact" id="contact">
-      <div className="heading">
-      <h2>Get in touch</h2>
-      </div>
-      
       <div className="left">
-        <img src="assets/contact1.png" alt="contact" />
+        <img src="assets/contact1.png" alt="" />
       </div>
-
       <div className="right">
-        <div className="email">
-          {/* <h2>Contact</h2> */}
-          <form action="">
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <textarea placeholder="Your Message" />
-
-            <input type="submit" id="btn" onClick={handleSubmit} />
-          </form>
-        </div>
-
-        <div className="social">
-          {/* <h2>Socials</h2> */}
-          <div className="socialIcon">
+        <h1>Get in touch</h1>
+        <form ref={form} onSubmit={sendEmail}>
           
-          <a href="#contact"> 
-              <Phone className="icons"/>+91 7351972087
-            </a>
-
-            <a
-              href="haldaranup.github@gmail.com"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Email className="icons"/>haldaranup.github@gmail.com
-            </a>
-            <a
-              href="https://github.com/haldaranup"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <GitHub className="icons"/>github.com/haldaranup
-            </a>
-            
-
-            <a
-              href="https://linkedin.com/haldar-anup"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <LinkedIn className="icons"/>linkedin.com/haldar-anup
-            </a>
-          </div>
-        </div>
+          <input type="text" name="user_name" placeholder="Name"/>
+          
+          <input type="email" name="user_email" placeholder="Email"/>
+          
+          <textarea name="message" placeholder="Message"/>
+          <input className="button" type="submit" value="Send" />
+        </form>
       </div>
     </div>
   );
-}
+};
+
+
+// export default function Contact() {
+//   const [message, setMessage] = useState(false);
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     setMessage(true);
+//   };
+//   return (
+//     <div className="contact" id="contact">
+//       <div className="left">
+//         <img src="assets/contact1.png" alt="" />
+//       </div>
+//       <div className="right">
+//         <h2>Contact.</h2>
+//         <form onSubmit={handleSubmit}>
+//           <input type="text" placeholder="Name" />
+//           <input type="text" placeholder="Email" />
+//           <textarea placeholder="Message"></textarea>
+//           <button type="submit">Send</button>
+//           {message && <span>Thanks, I'll reply ASAP :)</span>}
+//         </form>
+//       </div>
+//     </div>
+//   );
+// }
