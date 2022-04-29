@@ -31,7 +31,7 @@ export default function Footer() {
       <div className="line"></div>
       <div className="copy">
         <p>
-          Made with <span>❤️</span> by Anup Haldar
+          Designed with <span>❤️</span> by Anup Haldar
         </p>
       </div>
     </div>
