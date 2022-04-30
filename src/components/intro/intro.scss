@@ -14,21 +14,22 @@
     overflow: hidden;
 
     .imgContainer {
-      width: 860px;
-      height: 860px;
+      width: 750px;
+      height: 750px;
       background-color: crimson;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      float: right;
+      margin: 10vh 0 0 -10%;
+      // float: right;
 
       @include mobile{
         align-items: flex-start;
       }
 
       img {
-        height: 98%;
+        height: 80%;
         transform: rotateY(180deg);
         
 

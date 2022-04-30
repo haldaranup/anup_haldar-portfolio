@@ -52,8 +52,10 @@
     }
 
     .links {
-      width: 50%;
+      width: 45%;
       display: flex;
+      margin-left: 25%;
+      // justify-content: right;
       @include mobile{
         display: none;
       }
@@ -62,15 +64,24 @@
         // border: 1px solid red;
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
         li {
           font-family: $mainFont;
           font-size: 1.2rem;
           font-weight: 600;
+          
           a {
             text-decoration: none;
             color: yellow;
+            transition: all .5s ease;
+            &:hover{
+              color: #ff005d;
+              
+                box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+              
+              
+            }
             
           }
         }

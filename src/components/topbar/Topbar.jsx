@@ -1,4 +1,4 @@
-import { Phone } from "@mui/icons-material";
+
 import "./topbar.scss";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -9,22 +9,26 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <a href="#intro" className="logo">
             Anup
           </a>
-          <div className="itemContainer">
+          {/* <div className="itemContainer">
             <Phone className="icon" />
             <span>+91 7351972087</span>
-          </div>
+          </div> */}
           
         </div>
         <div className="links">
             <ul>
                 <li>
-                    <a href="#intro">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
                     <a href="#skills">Skills</a>
                 </li>
+                
                 <li>
                     <a href="#works">Projects</a>
+                </li>
+                <li>
+                    <a href="#resume">Resume</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>

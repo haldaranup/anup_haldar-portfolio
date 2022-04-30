@@ -1,0 +1,27 @@
+.about{
+    color: white;
+    .heading{
+        // border: 1px solid red;
+        margin: 8vh 0 0 0;
+        // width: 100%;
+        // margin: auto;
+        h1{
+            font-size: 50px;
+            width: 240px;
+            // border: 1px solid red;
+            margin: auto;
+        }
+    }
+    .content{
+        width: 80%;
+        margin: auto;
+        font-size: 1.25rem;
+        letter-spacing: 1.5px;
+        word-spacing: 5px;
+        line-height: 35px;
+        p{
+            margin: 40px;
+            text-align: center;
+        }
+    }
+}

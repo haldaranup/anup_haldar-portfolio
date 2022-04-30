@@ -1,17 +1,32 @@
-
-
 $width: 768px;
-
 
 $activeColor: #3e023d;
 $mainColor: #001220;
 $slideColor: #034078;
-$mainFont: 'Poppins', sans-serif;
-$cursiveFont: 'Satisfy', cursive;
+$mainFont: "Poppins", sans-serif;
+$cursiveFont: "Satisfy", cursive;
 $sectionColor: #0a0b3a;
 
 @mixin mobile {
-    @media (max-width: #{$width}){
-        @content
-    }
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin btn {
+  margin-top: 20px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: crimson;
+  color: white;
+  transition: all 0.4s ease-in;
+  &:hover {
+    background-color: yellow;
+    color: #060025;
+  }
 }

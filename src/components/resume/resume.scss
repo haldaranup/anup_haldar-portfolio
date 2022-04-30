@@ -6,6 +6,7 @@
   // border: 1px solid rgb(123, 147, 36);
   
   
+  
   a{
     width: 30%;
     margin: auto;
@@ -32,15 +33,7 @@
 
     }
     .resumeBtn{
-      margin-top: 20px;
-      width: 120px;
-      height: 40px;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      cursor: pointer;
-      background-color: crimson;
-      color: white;
+      @include btn
     }
   }
 }

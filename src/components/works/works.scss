@@ -12,8 +12,6 @@
     position: absolute;
     cursor: pointer;
 
-    
-
     &.left {
       left: 100px;
       transform: rotateY(180deg);
@@ -31,8 +29,6 @@
     left: 0;
     transition: all 1s ease-out;
 
-    
-
     .container {
       width: 100vw;
       display: flex;
@@ -40,10 +36,13 @@
       align-items: center;
       justify-content: space-around;
       // border: 1px solid white;
-      h1, p{
+      h1,
+      p {
         color: white;
+        word-spacing: 5px;
+        letter-spacing: 1.8px;
       }
-      div{
+      div {
         height: 25%;
         width: 60%;
         display: flex;
@@ -53,35 +52,27 @@
         align-items: center;
         text-align: center;
         color: yellow;
-        
       }
-      .links{
+      .links {
         display: flex;
         justify-content: space-evenly;
-        a{
-          .github{
+        a {
+          .github {
             color: yellow;
             width: 30px;
             height: 30px;
-
-        }
-
-        }
-        a{
-          button{
-            border: none;
-            width: 100px;
-            height: 30px;
-            border-radius: 6px;
-            background-color: crimson;
-            cursor: pointer;
-            color: white;
-            font-size: 1.15rem;
+            &:hover{
+              color: #ff0080
+            }
           }
-
+        }
+        a {
+          button {
+            @include btn;
+          }
         }
       }
-      
+
       .item {
         width: 650px;
         height: 50%;
@@ -97,7 +88,6 @@
           margin: 15px 0;
         }
 
-        
         .right {
           flex: 8;
           height: 100%;

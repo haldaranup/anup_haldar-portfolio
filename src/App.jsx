@@ -6,6 +6,7 @@ import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Top from "./components/top/Top";
+import About from "./components/about/About";
 import "./app.scss";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
@@ -19,6 +20,7 @@ function App() {
       <div className="sections">
         <Top />
         <Intro />
+        <About />
         <Portfolio />
         <Works />
         <Resume />
