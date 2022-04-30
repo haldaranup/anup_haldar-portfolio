@@ -52,6 +52,9 @@
         align-items: center;
         text-align: center;
         color: yellow;
+        @include mobile {
+          width: 90%;
+        }
       }
       .links {
         display: flex;
