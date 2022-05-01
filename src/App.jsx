@@ -2,7 +2,6 @@ import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
-import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Top from "./components/top/Top";
@@ -23,7 +22,6 @@ function App() {
         <About />
         <Portfolio />
         <Works />
-        <Resume />
         <Contact />
         <Footer />
 
