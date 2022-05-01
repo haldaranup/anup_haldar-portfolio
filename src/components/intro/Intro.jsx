@@ -30,7 +30,7 @@ export default function Intro() {
             A <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#skills">
+        <a href="#about">
         <KeyboardArrowDown className="downArrow" />
         </a>
       </div>
