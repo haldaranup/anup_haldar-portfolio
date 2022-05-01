@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .about{
     color: white;
     .heading{
@@ -20,7 +21,11 @@
         word-spacing: 5px;
         line-height: 35px;
         @include mobile {
-            font-size: 1rem;
+            width: 100%;
+            font-size: .8rem;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+        line-height: 20px;
           }
 
         p{

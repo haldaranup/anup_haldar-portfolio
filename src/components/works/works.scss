@@ -54,6 +54,12 @@
         color: yellow;
         @include mobile {
           width: 90%;
+          font-size: .8rem;
+          word-spacing: 3px;
+        letter-spacing: 1px;
+        }
+        h3{
+          margin-top: 20px;
         }
       }
       .links {
