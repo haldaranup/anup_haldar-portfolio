@@ -17,11 +17,9 @@ export default function About() {
         </p>
 
         <p>
-          I have done projects involving front-end and back-end development.
           Passionate about implementing and launching new projects. My
           specialties include learning new skills and programming languages,
-          problem-solving, responsive design principles, and the Model View
-          Controller (MVC) methods of organizing code. I'm still enthusiastically grabbing onto any other programming languages, frameworks, or principles I can integrate into the coding web in my head.
+          problem-solving, responsive design principles. I'm still enthusiastically grabbing onto any other programming languages, frameworks, or principles I can integrate into the coding web in my head.
         </p>
       </div>
     </div>
