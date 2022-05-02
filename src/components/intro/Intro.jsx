@@ -16,7 +16,6 @@ export default function Intro() {
         "Creative Designer",
         "Learner",
         "Problem Solver",
-        "Open source anthusiast",
       ],
     });
   }, []);
