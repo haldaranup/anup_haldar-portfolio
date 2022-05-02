@@ -1,4 +1,5 @@
 $width: 768px;
+$tabwidth: 1040px;
 
 $activeColor: #3e023d;
 $mainColor: #001220;
@@ -9,6 +10,11 @@ $sectionColor: #0a0b3a;
 
 @mixin mobile {
   @media (max-width: #{$width}) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: #{$tabwidth}) {
     @content;
   }
 }
