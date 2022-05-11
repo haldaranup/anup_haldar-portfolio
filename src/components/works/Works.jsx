@@ -27,6 +27,17 @@ export default function Works() {
       deploy: "https://paytm-mall-masai.netlify.app",
       github: "https://github.com/haldaranup/paytm-mall",
     },
+    {
+      id: "3",
+      icon: "",
+      title: "Bathandbodyworks Clone",
+      desc: "Cloning the Bathandbodyworks website for the construct week project. We used reactjs as our main tech for this project.",
+      tech: "Tech: Reactjs, Redux, JavaScript",
+      img: "https://miro.medium.com/max/1400/1*ywxvWib79n2i6Mkc8PU1-A.png",
+
+      deploy: "https://bathandbodyworks-clone-nu.vercel.app/",
+      github: "https://github.com/haldaranup/bathandbodyworks-clone",
+    }
   ];
 
   const handleClick = (way) => {
