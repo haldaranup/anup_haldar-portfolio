@@ -28,8 +28,8 @@
       // float: right;
 
       @include tab{
-        width: 500px;
-      height: 500px;
+        width: 600px;
+      height: 600px;
       }
       
 
@@ -42,7 +42,6 @@
 
       img {
         height: 80%;
-        
 
         @include mobile{
           height: 60%;
