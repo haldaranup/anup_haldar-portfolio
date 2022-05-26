@@ -41,6 +41,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      @include mobile {
+        justify-content: space-evenly;
+      }
       // border: 1px solid white;
       h1,
       p {
@@ -59,7 +62,7 @@
         text-align: center;
         color: yellow;
         @include mobile {
-          width: 90%;
+          width: 80%;
           font-size: .8rem;
           word-spacing: 3px;
         letter-spacing: 1px;

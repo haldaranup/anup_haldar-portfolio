@@ -32,19 +32,18 @@
       height: 80%;
     }
     .social {
-      // border: 1px solid red;
       display: flex;
       flex-direction: column;
-      // justify-content: space-evenly;
       align-items: center;
       @include mobile {
         height: 260px;
       }
       .gitli {
-        // border: 1px solid red;
         width: 260px;
         display: flex;
         justify-content: space-between;
+        position: relative;
+        bottom: 20px;
 
         
         @include mobile {
@@ -86,7 +85,6 @@
         div {
           display: flex;
           align-items: center;
-          // border: 1px solid red;
           @include mobile {
             height: 400px;
           }
@@ -113,6 +111,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    bottom: 30px;
+    
 
     h1 {
       font-size: 30px;

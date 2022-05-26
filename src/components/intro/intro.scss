@@ -35,9 +35,9 @@
 
       @include mobile {
         align-items: flex-start;
-        width: 260px;
-        height: 260px;
-        margin: 40px 0 0 0;
+        width: 250px;
+        height: 250px;
+        margin: 0;
         overflow: hidden;
       }
       // border: 1px solid red;
@@ -62,9 +62,9 @@
   .right {
     flex: 0.5;
     position: relative;
-    // @include mobile{
-    //   flex: 0.6;
-    // }
+    @include mobile{
+      flex: 0.6;
+    }
 
     .wrapper {
       width: 100%;
@@ -80,7 +80,7 @@
         width: 120px;
         position: relative;
         left: 0;
-        top: 20px;
+        top: 0;
         button {
           @include btn;
         }
@@ -102,9 +102,7 @@
         @include mobile {
           font-size: 40px;
         }
-        @include mobile {
-          font-size: 50px;
-        }
+        
       }
       h2 {
         font-size: 35px;
