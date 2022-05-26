@@ -4,7 +4,7 @@
   background-color: $mainColor;
   display: flex;
 
-  @include mobile{
+  @include mobile {
     flex-direction: column;
     align-items: center;
   }
@@ -17,36 +17,44 @@
     // }
 
     .imgContainer {
-      width: 700px;
-      height: 700px;
+      width: 350px;
+      height: 350px;
       background-color: crimson;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      margin: 15vh 0 0 -15%;
+      margin: 25vh 0 0 10vw;
       // float: right;
-
-      @include tab{
-        width: 600px;
-      height: 600px;
+      overflow: hidden;
+      @include tab {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
       }
-      
 
-      @include mobile{
+      @include mobile {
         align-items: flex-start;
-        width: 400px;
-      height: 400px;
-      margin: 0;
+        width: 260px;
+        height: 260px;
+        margin: 40px 0 0 0;
+        overflow: hidden;
       }
-
+      // border: 1px solid red;
       img {
-        height: 80%;
-
-        @include mobile{
-          height: 60%;
-          margin: 20vh 0 0 0;
+        height: 96%;
+        position: relative;
+        top: 24px;
+        @include tab {
+          position: relative;
+          top: 18px;
           
+          // border: 1px solid black;
+        }
+
+        @include mobile {
+          height: 90%;
+          margin: 25px 0 0 0;
         }
       }
     }
@@ -65,22 +73,20 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      @include mobile{
+      @include mobile {
         justify-content: flex-start;
       }
-      a{
+      a {
         width: 120px;
         position: relative;
         left: 0;
         top: 20px;
-        button{
-
+        button {
           @include btn;
         }
       }
 
-      @include mobile{
-        
+      @include mobile {
         padding-left: 0;
         align-items: center;
       }
@@ -89,12 +95,15 @@
         font-size: 60px;
         margin: 10px 0;
         color: crimson;
-        span{
+        span {
           color: white;
         }
 
-        @include mobile{
+        @include mobile {
           font-size: 40px;
+        }
+        @include mobile {
+          font-size: 50px;
         }
       }
       h2 {
@@ -104,8 +113,8 @@
       h3 {
         font-size: 30px;
         color: white;
-        
-        @include mobile{
+
+        @include mobile {
           font-size: 20px;
         }
 
@@ -119,20 +128,20 @@
         }
 
         @keyframes blink {
-            50%{
-                opacity: 1;
-            }
-            100%{
-                opacity: 0;
-            }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
         }
       }
     }
     a {
       position: absolute;
-      bottom: 10px;
+      bottom: 60px;
       left: 40%;
-      
+
       .downArrow {
         color: yellow;
         font-size: 5rem;
