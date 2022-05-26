@@ -6,9 +6,12 @@ import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const form = useRef();
-
+  const sentMessage = ()=>{
+    alert("Sent Successfully!")
+  }
   const sendEmail = (e) => {
     e.preventDefault();
+    
 
     emailjs
       .sendForm(
@@ -19,7 +22,9 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          return setTimeout(()=>{
+            sentMessage()
+          },2000)
         },
         (error) => {
           console.log(error.text);
@@ -68,11 +73,12 @@ export default function Contact() {
       <div className="right">
         <h1>Get in touch</h1>
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" placeholder="Name" />
+          <input type="text" name="user_name" placeholder="Name" required />
 
-          <input type="email" name="user_email" placeholder="Email" />
+          <input type="email" name="user_email" placeholder="Email" required />
 
-          <textarea name="message" placeholder="Message" />
+          <textarea name="message" placeholder="Message" required />
+          
           <input className="button" type="submit" value="Send" />
         </form>
       </div>
