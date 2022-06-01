@@ -21,4 +21,4 @@ ___
 ![](https://miro.medium.com/max/1400/1*zKj82UZ9lVygTw1P2RE-Pg.png)
 
 ## For more details here is my blog.
-![Blog-Link](https://haldaranup.medium.com/screenshots-cc00715c9d9a)
+[Blog-Link](https://haldaranup.medium.com/screenshots-cc00715c9d9a)
