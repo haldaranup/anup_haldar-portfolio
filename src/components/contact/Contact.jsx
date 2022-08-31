@@ -46,10 +46,10 @@ export default function Contact() {
           <a href="https://github.com/haldaranup" target="_blank" rel="noreferrer">
             <GitHub className="socialIcon" />
           </a>
-          <a href="https://www.linkedin.com/in/haldar-anup/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/haldaranup/" target="_blank" rel="noreferrer">
             <LinkedIn className="socialIcon" />
           </a>
-          <a href="https://instagram.com/haldaranup1" target="_blank" rel="noreferrer">
+          <a href="https://instagram.com/haldar_anup1" target="_blank" rel="noreferrer">
             <Instagram className="socialIcon" />
           </a>
           <a href="https://twitter.com/haldar_anup1"  rel="noreferrer" target="_blank">
