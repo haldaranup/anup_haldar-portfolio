@@ -13,7 +13,7 @@ export default function Intro() {
       backSpeed: 60,
       strings: [
         "Web Developer",
-        "Creative Designer",
+        "Open-source Enthusiast",
         "Learner",
         "Problem Solver",
       ],
@@ -37,7 +37,7 @@ export default function Intro() {
             A <span ref={textRef}></span>
           </h3>
             <a
-              href="https://drive.google.com/file/d/1W9KWSmI-HXffwM3bpNCh_06IN6W6gT9x/view?usp=sharing"
+              href="https://drive.google.com/file/d/1s_-MRUk4kjf15TyQxerjHDuCHiW7eJyS/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
