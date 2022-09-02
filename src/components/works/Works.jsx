@@ -30,6 +30,17 @@ export default function Works() {
     {
       id: "3",
       icon: "",
+      title: "Milaap clone",
+      desc: "Milaap is an online crowdfunding platform that enables anyone across India to raise funds for healthcare, education, and other personal causes.",
+      tech: "Tech: React.js, Redux, Sass",
+      img: "https://camo.githubusercontent.com/05a071883d80ff5c16fd4a370a71e89ef69aefadb1c393fbbb02fb5833dc9b9d/68747470733a2f2f692e696d6775722e636f6d2f6a454e624a6f522e706e67",
+
+      deploy: "https://milaap-clone.netlify.app",
+      github: "https://github.com/anowar265/sordid-authority-4005",
+    },
+    {
+      id: "4",
+      icon: "",
       title: "Bathandbodyworks Clone",
       desc: "Cloning the Bathandbodyworks website for the construct week project. We used reactjs as our main tech for this project.",
       tech: "Tech: Reactjs, Redux, JavaScript",
