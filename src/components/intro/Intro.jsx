@@ -37,7 +37,7 @@ export default function Intro() {
             A <span ref={textRef}></span>
           </h3>
             <a
-              href="https://drive.google.com/file/d/1s_-MRUk4kjf15TyQxerjHDuCHiW7eJyS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DhmzRxZYRm91Qxizu6E-ODsgrLWQ5SZQ/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
