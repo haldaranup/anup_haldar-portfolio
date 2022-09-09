@@ -18,7 +18,7 @@ export default function About() {
         </p>
 
         <p>
-          Passionate about implementing and launching new projects. Specialties include learning new skills and programming languages,
+          Specialties include learning new skills and programming languages,
           problem-solving, responsive design principles. I'm still enthusiastically grabbing onto any other programming languages, frameworks, or principles I can integrate into the coding web in my head.
         </p>
       </div>
