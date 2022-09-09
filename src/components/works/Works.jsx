@@ -30,12 +30,14 @@ export default function Works() {
     {
       id: "3",
       icon: "",
+
       title: "Adidas Clone",
       desc: "Cloning the adidas website for the construct week project. We worked only on front-end for this project and the site is fully responsive. ",
       tech: "HTML CSS JavaScript ",
       img: "https://github.com/haldaranup/adidas-clone/raw/main/src/assets/homepage.png",
       deploy: "https://adidas-clone12.netlify.app",
       github: "https://github.com/haldaranup/adidas-clone",
+
     },
     {
       id: "4",
