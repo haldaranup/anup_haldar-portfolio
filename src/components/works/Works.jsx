@@ -9,19 +9,19 @@ export default function Works() {
     {
       id: "1",
       icon: "",
-      title: "Adidas Clone",
-      desc: "Cloning the adidas website for the construct week project. We worked only on front-end for this project and the site is fully responsive. ",
-      tech: "Tech: HTML CSS JavaScript ",
-      img: "https://github.com/haldaranup/adidas-clone/raw/main/src/assets/homepage.png",
-      deploy: "https://adidas-clone12.netlify.app",
-      github: "https://github.com/haldaranup/adidas-clone",
+      title: "Milaap Clone",
+      desc: "Milaap is an online crowdfunding platform that enables anyone across India to raise funds for healthcare, education,disaster relief and other personal causes, with great ease.",
+      tech: "React Redux Sass Firebase",
+      img: "https://camo.githubusercontent.com/05a071883d80ff5c16fd4a370a71e89ef69aefadb1c393fbbb02fb5833dc9b9d/68747470733a2f2f692e696d6775722e636f6d2f6a454e624a6f522e706e67",
+      deploy: "https://milaap-clone.vercel.app/",
+      github: "https://github.com/anowar265/sordid-authority-4005",
     },
     {
       id: "2",
       icon: "",
       title: "Paytm-mall Clone",
       desc: "Cloning the Paytm Mall website for the construct week project. We also worked on the back-end for this project.",
-      tech: "Tech: HTML CSS JavaScript Nodejs Expressjs MongoDB",
+      tech: "HTML CSS JavaScript Nodejs Expressjs MongoDB",
       img: "https://github.com/haldaranup/paytm-mall/raw/master/src/assets/homepage.png",
 
       deploy: "https://paytm-mall-masai.netlify.app",
@@ -30,14 +30,24 @@ export default function Works() {
     {
       id: "3",
       icon: "",
+      title: "Adidas Clone",
+      desc: "Cloning the adidas website for the construct week project. We worked only on front-end for this project and the site is fully responsive. ",
+      tech: "HTML CSS JavaScript ",
+      img: "https://github.com/haldaranup/adidas-clone/raw/main/src/assets/homepage.png",
+      deploy: "https://adidas-clone12.netlify.app",
+      github: "https://github.com/haldaranup/adidas-clone",
+    },
+    {
+      id: "4",
+      icon: "",
       title: "Bathandbodyworks Clone",
       desc: "Cloning the Bathandbodyworks website for the construct week project. We used reactjs as our main tech for this project.",
-      tech: "Tech: Reactjs, Redux, JavaScript",
+      tech: "Reactjs, Redux, JavaScript",
       img: "https://miro.medium.com/max/1400/1*ywxvWib79n2i6Mkc8PU1-A.png",
 
       deploy: "https://bathandbodyworks-clone-nu.vercel.app/",
       github: "https://github.com/haldaranup/bathandbodyworks-clone",
-    }
+    },
   ];
 
   const handleClick = (way) => {
@@ -65,13 +75,12 @@ export default function Works() {
 
             <div className="links">
               <a href={d.github} target="_blank" rel="noreferrer">
-              <GitHub className="github"/>
+                <GitHub className="github" />
               </a>
-              
+
               <a href={d.deploy} target="_blank" rel="noreferrer">
-              <button>Live</button>
+                <button>Live</button>
               </a>
-              
             </div>
           </div>
         ))}

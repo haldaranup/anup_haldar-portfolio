@@ -7,7 +7,7 @@
       name="description"
       content="My name is Anup Haldar. I am a web developer specializes in front-end development and this is my personal portfolio website with all the information about my projects, contacts, resume, skills and many more."
     />
-    <link rel="shortcut icon" href="assets/favicon.png" type="">
+    <link rel="shortcut icon" href="assets/favicon.png" type="" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +15,20 @@
       rel="stylesheet"
     />
     <style>
+      html {
+        scrollbar-width: normal;
+        scrollbar-color: rgb(0, 0, 54) rgb(25, 0, 79);
+      }
+
+      html::-webkit-scrollbar {
+        width: 2vw;
+      }
+      html::-webkit-scrollbar-thumb {
+        background-color: red;
+      }
+      html::-webkit-scrollbar-track {
+        background-color: blue;
+      }
       * {
         font-family: "Roboto", sans-serif;
         margin: 0;

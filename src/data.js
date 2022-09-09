@@ -34,6 +34,12 @@ export const frontEnd = [
       title: "",
       img:
         "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+    },
+    {
+      id: 3,
+      title: "",
+      img:
+        "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/materialui/materialui-original.svg",
     }
 
     
@@ -69,12 +75,6 @@ export const frontEnd = [
       title: "",
       img:
         "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-    },
-    {
-      id: 3,
-      title: "",
-      img:
-        "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/materialui/materialui-original.svg",
     }
 
   ];
