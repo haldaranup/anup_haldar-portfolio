@@ -9,16 +9,16 @@ export default function About() {
 
       <div className="content">
         <p>
-          When I created my first hand-coded webpage, I was so excited to learn
-          more about these technologies. After completing my bachelor's in
-          Science I got a chance to study full-stack web development at Masai
-          School to enhance my coding skills. I learned MERN stack along with
-          data structures & algorithms(DSA) and soft skills.
+          A passionate web developer with intuitive
+          problem-solving skills and specializes in
+          MERN stack. Passionate about implementing
+          and launching new projects. Worked on
+          projects involving front-end and back-end
+          development.
         </p>
 
         <p>
-          Passionate about implementing and launching new projects. My
-          specialties include learning new skills and programming languages,
+          Passionate about implementing and launching new projects. Specialties include learning new skills and programming languages,
           problem-solving, responsive design principles. I'm still enthusiastically grabbing onto any other programming languages, frameworks, or principles I can integrate into the coding web in my head.
         </p>
       </div>
