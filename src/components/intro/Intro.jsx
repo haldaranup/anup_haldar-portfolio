@@ -38,7 +38,7 @@ export default function Intro() {
           </h3>
             <a
 
-              href="https://drive.google.com/file/d/1KNvjGaHIaaoEv1AEg8rVu2G7B7ZLgAfs/view?usp=sharing"
+              href="https://drive.google.com/file/d/1G1_11qzSJiZwhTp11dUzAmMSxcWyOgLE/view"
               target="_blank"
               rel="noreferrer"
             >
