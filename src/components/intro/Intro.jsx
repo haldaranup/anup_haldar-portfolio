@@ -15,7 +15,6 @@ export default function Intro() {
         "Web Developer",
         "Open-source Enthusiast",
         "Learner",
-        "Problem Solver",
       ],
     });
   }, []);
