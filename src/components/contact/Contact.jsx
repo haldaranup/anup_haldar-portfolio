@@ -63,7 +63,7 @@ export default function Contact() {
           <div className="contacts">
             <div>
               <Email className="socialIcon" />
-              <span>haldaranup.work@gmail.com</span>
+              <span>haldaranup.work@gmail.com/abc@gmail.com</span>
             </div>
             <div>
               <Phone className="socialIcon" />
