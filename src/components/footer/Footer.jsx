@@ -6,7 +6,7 @@ export default function Footer() {
     <div id="footer">
       <div className="copy">
         <p>
-          Designed with <span>❤️</span> by Anup Haldar
+          Designed with <span>❤️</span> by Anup Haldar from Uttarakhand frontend developer
         </p>
       </div>
     </div>
