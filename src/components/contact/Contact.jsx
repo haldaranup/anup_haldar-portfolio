@@ -67,7 +67,7 @@ export default function Contact() {
             </div>
             <div>
               <Phone className="socialIcon" />
-              <span>+91 7351972087</span>
+              <span>+91 7351972087/ 9140858847</span>
             </div>
           </div>
         </div>
